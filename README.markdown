@@ -82,20 +82,17 @@ Performed in **SQL**, **Python**, and **Excel**:
 ## Repository Structure
 ```
 ├── data/
-│   ├── Banking.xlsx                # Raw dataset
-│   ├── cleaned_banking_data.csv    # Cleaned dataset
+│   ├── Raw data.xlsx                # Raw dataset
+│   ├── Clean_data.csv    # Cleaned dataset
 ├── scripts/
 │   ├── data_cleaning.py           # Python script for data cleaning
 │   ├── eda.py                     # Python script for EDA
 │   ├── sql_queries.sql            # SQL queries for preprocessing
 ├── notebooks/
-│   ├── Banking_data_preprocessing.ipynb  # Jupyter Notebook for EDA
+│   ├── Banking_data_analysis_main.ipynb  # Jupyter Notebook for EDA
 ├── dashboards/
-│   ├── Banking_Dashboard.pbix     # Power BI dashboard file (placeholder)
-├── reports/
-│   ├── Banking_Report.docx        # Project report
+│   ├── Banking_dashboard.pbix     # Power BI dashboard file (placeholder)
 ├── README.md                      # Project overview
-└── LICENSE                        # MIT License
 ```
 
 ## Installation & Setup
@@ -111,15 +108,15 @@ Performed in **SQL**, **Python**, and **Excel**:
    - Execute `data_cleaning.py` for preprocessing.
    - Run `eda.py` for exploratory analysis.
 4. **SQL Setup**:
-   - Import `Banking.xlsx` into your SQL database (e.g., MySQL, SQLite).
+   - Import `Raw data.xlsx` into your SQL database (e.g., MySQL, SQLite).
    - Run queries in `sql_queries.sql`.
 5. **Power BI**:
-   - Open `Banking_Dashboard.pbix` in Power BI Desktop to view dashboards.
+   - Open `Banking_dashboard.pbix` in Power BI Desktop to view dashboards.
 
 ## Usage
 - **Data Cleaning**: Run `data_cleaning.py` to preprocess the dataset and generate `cleaned_banking_data.csv`.
 - **EDA**: Use `eda.py` or `Banking_data_preprocessing.ipynb` to explore data and visualize trends.
-- **Dashboards**: Load `Banking_Dashboard.pbix` in Power BI to interact with KPIs and visualizations.
+- **Dashboards**: Load `Banking_dashboard.pbix` in Power BI to interact with KPIs and visualizations.
 - **SQL Queries**: Execute `sql_queries.sql` for data extraction and preprocessing.
 
 ## Future Work
