@@ -1,0 +1,34 @@
+-- Create Engagement Days
+ALTER TABLE Clients_Banking
+ADD Engagement_Days INT;
+
+UPDATE Clients_Banking
+SET Engagement_Days = DATEDIFF(CURDATE(), STR_TO_DATE(Joined_Bank, '%d-%m-%Y'));
+
+-- Create Income Band
+ALTER TABLE Clients_Banking
+ADD Income_Band VARCHAR(10);
+
+UPDATE Clients_Banking
+SET Income_Band = CASE 
+    WHEN Estimated_Income < 100000 THEN 'Low'
+    WHEN Estimated_Income < 300000 THEN 'Mid'
+    ELSE 'High'
+END;
+
+-- Create Processing Fees
+ALTER TABLE Clients_Banking
+ADD Processing_Fees FLOAT;
+
+UPDATE Clients_Banking
+SET Processing_Fees = CASE 
+    WHEN Fee_Structure = 'High' THEN 0.05
+    WHEN Fee_Structure = 'Mid' THEN 0.03
+    WHEN Fee_Structure = 'Low' THEN 0.01
+END;
+
+-- Sample Query: Total Loans by Nationality
+SELECT Nationality, SUM(Bank_Loans + Business_Lending + Credit_Card_Balance) AS Total_Loan
+FROM Clients_Banking
+GROUP BY Nationality
+ORDER BY Total_Loan DESC;
