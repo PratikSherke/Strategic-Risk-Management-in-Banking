@@ -82,8 +82,8 @@ Performed in **SQL**, **Python**, and **Excel**:
 ## Repository Structure
 ```
 ├── data/
-│   ├── Raw data.xlsx                # Raw dataset
-│   ├── Clean_data.csv    # Cleaned dataset
+│   ├── Raw data.csv                # Raw dataset
+│   ├── Clean_data.xlsx    # Cleaned dataset
 ├── scripts/
 │   ├── data_cleaning.py           # Python script for data cleaning
 │   ├── eda.py                     # Python script for EDA
