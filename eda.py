@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load cleaned dataset
-df = pd.read_csv('data/cleaned_banking_data.csv')
+df = pd.read_csv('Clean_data.csv')
 
 # Correlation Heatmap
 plt.figure(figsize=(10, 8))
