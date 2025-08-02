@@ -3,7 +3,7 @@ import numpy as np
 from datetime import datetime
 
 # Load dataset
-df = pd.read_excel('Raw data.xlsx', sheet_name='Clients - Banking')
+df = pd.read_csv('Raw data.csv', sheet_name='Clients - Banking')
 
 # Data Cleaning
 # Handle missing values
