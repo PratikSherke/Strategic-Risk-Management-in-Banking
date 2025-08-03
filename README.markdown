@@ -1,4 +1,4 @@
-# Banking Risk Analytics Dashboard: Optimizing Loan Decisions with Power BI, Python, and SQL
+# Banking Risk Analytics: With Python, SQL, and Power BI for Enhanced Decision-Making
 
 ## Project Overview
 This project develops a comprehensive data analytics pipeline to assess and minimize financial risks in banking, focusing on loan repayment likelihood. By leveraging **Python**, **SQL**, **Excel**, and **Power BI**, the project provides actionable insights through exploratory data analysis (EDA) and interactive dashboards, enabling data-driven decisions for loan approvals.
